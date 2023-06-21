@@ -1,0 +1,15 @@
+{
+	"name": "Aroma Thai Massage & Spa",
+	"email": "info@aromathai.cat",
+	"phoneForTel": "+34972282872",
+	"phoneFormatted": "+34 972 282 872",
+	"address": {
+		"lineOne": "Carrer de l'Obra, 3",
+		"lineTwo": "",
+		"city": "Girona,",
+		"state": "Spain,",
+		"zip": "17001",
+		"mapLink": "https://goo.gl/maps/yGtqpYV7Wg7bDYWg8"
+	},
+	"domain": "www.aromathai.cat"
+}

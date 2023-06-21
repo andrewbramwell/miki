@@ -1,0 +1,591 @@
+/*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+
+    #banner-850 {
+        /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
+        font-family: 'Roboto', 'Arial', sans-serif;
+        /* 175px - 260px top */
+        padding: clamp(10.9375rem, 20vw, 16.25rem) (16/16rem) clamp(6.25rem, 14vw, 12vw);
+        /* clips svg wave from causing overflow issues */
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        
+        .cs-container {
+            text-align: center;
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: (16/16rem);
+        }
+    
+        .cs-int-title {
+            /* 39px - 61px */
+            font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: inherit;
+            margin: 0;
+            color: var(--bodyTextColorWhite);
+            position: relative;
+        }
+
+        .cs-background {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            &:before {
+                /* background color overlay */
+                content: '';
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: #1a1a1a;
+                opacity: .64;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                /* Makes img tag act as a background image */
+                object-fit: cover;
+            }
+        }
+
+        .cs-wave {
+            /* we're stretching the svg wider than the viewport so it's taller and has more of a presence */
+            width: (768/16rem);
+            height: auto;
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #banner-850 {
+        .cs-background {
+            &:before {
+                opacity: 1;
+                background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.9) 16.86%, rgba(0, 0, 0, 0) 100%);
+            }
+        }
+
+        .cs-wave {
+            width: 100%;
+            left: 0;
+            transform: none;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #banner-850 {
+            .cs-wave {
+                path {
+                    fill: var(--dark);
+                }
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+
+
+    #sbs-867 {
+        padding: var(--sectionPadding);
+        
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: (630/16rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+    
+        .cs-title {
+            font-size: var(--headerFontSize);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: inherit;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 (16/16rem) 0;
+            color: var(--headerColor);
+            position: relative;
+        }
+
+        h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            text-align: inherit;
+            margin: 0 0 (16/16rem) 0;
+            color: var(--headerColor);
+        }
+
+        h2 {
+            font-size: (32/16rem);
+            margin-top: (32/16rem);
+        }
+
+        h3 {
+            font-size: (24/16rem);
+            color: var(--primary);
+        }
+
+        h4, h5, h6 {
+            font-size: (20/16rem);
+        }
+
+        .cs-button-solid {
+            margin-bottom: (32/16rem);
+        }
+
+        .cs-no-margin {
+            margin: 0;
+        }
+
+        .cs-color {
+            color: var(--primary);
+        }
+    
+        p {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            text-align: inherit;
+            width: 100%;
+            margin: 0 0 (16/16rem) 0;
+            color: var(--bodyTextColor);
+            &:last-of-type {
+                margin-bottom: (32/16rem);
+            }
+
+            a {
+                font-size: inherit;
+                line-height: inherit;
+                text-decoration: underline;
+                color: var(--primary);
+            }
+        }
+
+        ol, ul {
+            padding-left: (24/16rem);
+            margin: 0 0 (32/16rem) 0;
+            color: var(--bodyTextColor);
+            display: flex;
+            flex-direction: column;
+            gap: (16/16rem);
+        }
+
+        ul {
+            li {
+                list-style: none;
+                color: inherit;
+                position: relative;
+
+                &:before {
+                    /* custom list bullet */
+                    content: '';
+                    width: 3px;
+                    height: 3px;
+                    background: currentColor;
+                    opacity: 1;
+                    border-radius: 50%;
+                    position: absolute;
+                    display: block;
+                    top: (10/16rem);
+                    left: (-12/16rem);
+                }
+            }
+        }
+
+        .cs-picture {
+            display: block;
+            position: relative;
+            width: 100%;
+            max-width: (630/16rem);
+            /* 400px - 775px */
+            height: clamp(25rem, 70vw, 48.4375rem);
+            box-shadow: 0px 2.80579px 42.0868px rgba(0, 0, 0, 0.16);
+            /* 100px - 200px */
+            border-radius: 0 clamp(6.25rem, 17vw, 12.5rem) 0 clamp(6.25rem, 17vw, 12.5rem);
+            /* clips img tag corners */
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 64rem) {
+    #sbs-867 {
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            flex-direction: row;
+            max-width: (1280/16rem);
+            justify-content: space-between;
+        }
+
+        .cs-content {
+            width: 53%;
+            /* reset the padding, add the section padding back to the section container */
+            padding: 0;
+        }
+
+        .cs-picture {
+            width: 47vw;
+            position: relative;
+        }
+    }
+}
+
+  /* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #sbs-867 {
+            background-color: var(--dark);
+            
+            .cs-title, .cs-text, h2, h3, h4, h5, h6, li, p {
+                color: var(--bodyTextColorWhite);
+            }
+            .cs-color, a {
+                color: var(--primaryLight);
+            }
+
+            p, li {
+                color: #ebebeb;
+            }
+
+            .cs-picture {
+                border-color: var(--dark);
+                background-color: var(--dark);
+            }
+        }
+    }
+}
+                                
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    
+
+    #faq-709 {
+        position: relative;
+        overflow: hidden;
+        
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* 40px - 48px */
+            gap: clamp(2.5rem, 5vw, 3rem);
+        }
+
+        .cs-content {
+            text-align: left;
+            max-width: (541/16rem);
+            /* move section padding to the cs-content so we can make the cs-picture full width */
+            padding: var(--sectionPadding);
+            padding-top: 0;
+            /* prevents padding from affecting height and width */
+            box-sizing: border-box;
+        }
+    
+        .cs-title {
+            /* cs-title override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This second cs-text is a section specific override that stays inside this stitch */
+            /* 20 characters wide including spaces */
+            max-width: 20ch;
+            margin: 0 0 (24/16rem) 0;
+        }
+
+        .cs-faq-group {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .cs-faq-item {
+            list-style: none;
+            width: 100%;
+            border-bottom: 1px solid #E8E8E8;
+            transition: border-bottom .3s;
+
+            &.active {
+                border-color: var(--primaryLight);
+                .cs-button {
+                    color: var(--primary);
+                    &:before {
+                        background-color: var(--primaryLight);
+                        transform: rotate(315deg);
+                    }
+                    &:after {
+                        background-color: var(--primaryLight);
+                        transform: rotate(-315deg);
+                    }
+                }
+                .cs-item-p {
+                    height: auto;
+                    /* 20px - 24px bottom */
+                    padding: 0 0 clamp(1rem, 2vw, 1.5rem) 0;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .cs-button {
+            /* 16px - 20px */
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            line-height: 1.2em;
+            text-align: left;
+            font-weight: bold;
+            /* 16px - 24px */
+            padding: clamp(1rem, 2.3vw, 1.5rem) 0;
+            border: none;
+            background: transparent;
+            color: var(--headerColor);
+            display: block;
+            width: 100%;
+            position: relative;
+            transition: background-color .3s, color .3s;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:before {
+                /* left line */
+                content: '';
+                width: (8/16rem);
+                height: (2/16rem);
+                background-color: var(--headerColor);
+                opacity: 1;
+                border-radius: 50%;
+                position: absolute;
+                display: block;
+                top: 45%;
+                right: (4/16rem);
+                transform: rotate(45deg);
+                /* animate the transform from the left side of the x axis, and the center of the y */
+                transform-origin: left center;
+                transition: transform .5s;
+            }
+
+            &:after {
+                /* right line */
+                content: '';
+                width: (8/16rem);
+                height: (2/16rem);
+                background-color: var(--headerColor);
+                opacity: 1;
+                border-radius: 50%;
+                position: absolute;
+                display: block;
+                top: 45%;
+                right: (1/16rem);
+                transform: rotate(-45deg);
+                /* animate the transform from the right side of the x axis, and the center of the y */
+                transform-origin: right center;
+                transition: transform .5s;
+            }
+        }
+
+        .cs-button-text {
+            width: 90%;
+            display: block;
+        }
+
+        .cs-item-p {
+            /* 14px - 16px */
+            font-size: clamp(.875rem, 1.5vw, 1rem);
+            line-height: 1.5em;
+            width: 90%;
+            max-width: (541/16rem);
+            height: 0;
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            color: var(--bodyTextColor);
+            /* clips the text so it doesn't show up */
+            overflow: hidden;
+            transition: opacity .3s, padding-bottom .3s;
+        }
+
+        .cs-graphic {
+            width: (361/16rem);
+            height: auto;
+            opacity: .5;
+            display: none;
+            position: absolute;
+            left: (-180/16rem);
+            bottom: (30/16rem);
+            /* flips it horizontally */
+            transform: scaleX(-1);
+        }
+
+        .cs-picture {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: (256/16rem);
+            z-index: 1;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+              }
+              
+              /* Styles for desktop devices */
+              @media (min-width: 1024px) {
+                img {
+                  border-radius: 0 clamp(6.25rem, 17vw, 12.5rem) 0 clamp(6.25rem, 17vw, 12.5rem);
+                  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.16);
+                }
+              }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #faq-709 {
+        /* moved seciton padding back to the section */
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .cs-picture {
+            width: 50%;
+            max-width: (650/16rem);
+            /* 500px - 750px */
+            height: clamp(31.25rem, 68vw, 46.875rem);
+            /* sends it to the right in the 2nd position */
+            order: 2;
+        }
+
+        .cs-content {
+            width: 55%;
+            padding: 0;
+        }
+    }
+}
+
+/* Desktop - 1600px */
+@media only screen and (min-width: 100rem) {
+    #faq-709 {
+        .cs-graphic {
+            display: block;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #faq-709 {
+            .cs-topper {
+                color: var(--primaryLight);
+            }
+
+            .cs-title, .cs-item-p {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-faq-item {
+                border-color: rgba(255, 255, 255, .2);
+                &.active {
+                    border-color: var(--bodyTextColorWhite);
+                    .cs-button {
+                        color: var(--bodyTextColorWhite);
+                        &:before, &:after {
+                            background-color: var(--bodyTextColorWhite);
+                        }
+                    }
+                }
+            }
+
+            .cs-button {
+                color: var(--bodyTextColorWhite);
+                &:before, &:after {
+                    background-color: var(--bodyTextColorWhite);
+                }
+            }
+        }
+    }
+}
+                                
