@@ -6,7 +6,7 @@
 	"scripts": {
 		"watch:eleventy": "eleventy --serve",
 		"build:eleventy": "eleventy",
-		"build:less": "less-watch-compiler ./src/assets/less ./public/css",
+		"build:less": "less-watch-compiler --run-once ./src/assets/less ./public/css",
 		"watch:less": "less-watch-compiler ./src/assets/less ./public/css",
 		"watch:cms": "npx netlify-cms-proxy-server",
 		"start": "del-cli ./public --force && npm-run-all --parallel watch:*",
