@@ -1,0 +1,11 @@
+{
+	"en": {
+		"header": {
+			"logoAria": "back to home",
+			"toggleAria": "mobile menu toggle",
+			"dropdownAria": "dropdown icon",
+			"darkModeAria": "dark mode toggle",
+			"contact": "Contact Us"
+		}
+	}
+}
