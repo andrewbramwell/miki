@@ -1,7 +1,7 @@
 <!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang }}">
   <head>
     <!-- Standard meta tags -->
     <meta charset="UTF-8">
@@ -77,15 +77,17 @@
       {% block body %}{% endblock %}
     </main>
     {% include "components/footer.html" %}
-<script>
-    const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
-    for (const item of faqItems) {
+    <script>
+      const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+      for (const item of faqItems) {
         const onClick = () => {
-        item.classList.toggle('active')
-    }
-    item.addEventListener('click', onClick)
-    }
-</script>
-                                
+          item
+            .classList
+            .toggle('active')
+        }
+        item.addEventListener('click', onClick)
+      }
+    </script>
+
   </body>
 </html>
