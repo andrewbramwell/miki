@@ -19,7 +19,7 @@ permalink: 'contact/'
 
     <div id="banner-843">
         <div class="cs-container">
-            <span class="cs-int-title">Contact Aroma Thai Massage Spa</span>
+            <span class="cs-int-title">{{ banner.title }}</span>
         </div>
         <!--Background Image-->
         <picture class="cs-background" aria-hidden="true">
@@ -27,7 +27,7 @@ permalink: 'contact/'
             <source media="(max-width: 600px)" srcset="/assets/images/hero-m.webp">
             <!--Tablet and above Image-->
             <source media="(min-width: 601px)" srcset="/assets/images/hero.webp">
-            <img loading="lazy" decoding="async" src="/assets/images/hero.webp" alt="Thai massage banner" width="1280" height="568">
+            <img loading="lazy" decoding="async" src="/assets/images/hero.webp" alt="{{ banner.imgAlt }}" width="1280" height="568">
         </picture>
         <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
         <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,45 +43,43 @@ permalink: 'contact/'
         <div class="cs-container">
             <div class="cs-left-section">
                 <div class="cs-content">
-                    <span class="cs-topper">CONTACT US</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Have questions or ready to book your relaxing experience? Contact us today and let our team at Aroma Thai assist you in creating the perfect Thai massage and beauty spa getaway in Girona - tailored to your needs.
-                    </p>
+                    <span class="cs-topper">{{ form.topper }}</span>
+                    <h2 class="cs-title">{{ form.title }}</h2>
+                    <p class="cs-text">{{ form.text }}</p>
                 </div>
                 <form id="cs-form-265" name="Contact Form" method="post">
                     <label>
-                        Name
-                        <input required type="text" id="name-265" name="name" placeholder="Name">
+                        {{ form.inputOne.label}}
+                        <input required type="text" id="name-265" name="name" placeholder="{{ form.inputOne.placeholder }}">
                     </label>
                     <label>
-                        Email
-                        <input required type="text" id="email-265" name="email" placeholder="Email">
+                        {{ form.inputTwo.label}}
+                        <input required type="text" id="email-265" name="email" placeholder="{{ form.inputTwo.placeholder }}">
                     </label>
                     <label>
-                        Phone
-                        <input required type="text" id="phone-265" name="phone" placeholder="Phone">
+                        {{ form.inputThree.label}}
+                        <input required type="text" id="phThree-265" name="phone" placeholder="{{ form.inputThree.placeholder }}">
                     </label>
                     <label>
-                        How Did You Find Us
-                        <input type="text" id="find-265" name="find-us" placeholder="How did you find us?">
+                        {{ form.inputFour.label}}
+                        <input type="text" id="find-265" name="find-us" placeholder="{{ form.inputFour.placeholder }}">
                     </label>
                     <label class="cs-label-message">
-                        Message
-                        <textarea required name="Message" id="message-265" placeholder="Write message..."></textarea>
+                        {{ form.inputFive.label}}
+                        <textarea required name="Message" id="message-265" placeholder="{{ form.inputFive.placeholder }}"></textarea>
                     </label>
-                    <button class="cs-button-solid cs-submit" type="submit">Submit Message</button>
+                    <button class="cs-button-solid cs-submit" type="submit">{{ form.button }}</button>
                 </form>
             </div>
             <div class="cs-right-section">
                 <!--Email-->
-                <span class="cs-header">Whatsapp</span>
-                <a class="cs-link" href="https://wa.me/+34648294872">Click To Chat</a>
+                <span class="cs-header">{{ form.img.whatsapp }}</span>
+                <a class="cs-link" href="https://wa.me/+34648294872">{{ form.img.chat }}</a>
                 <!--Phone-->
-                <span class="cs-header">Phone</span>
+                <span class="cs-header">{{ form.img.phone }}</span>
                 <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
                 <!--Address-->
-                <span class="cs-header">Address</span>
+                <span class="cs-header">{{ form.img.address }}</span>
                 <a class="cs-link" href="{{client.address.mapLink}}">
                     {{client.address.lineOne}},
                     <br />
@@ -102,19 +100,6 @@ permalink: 'contact/'
         </div>
     </section>
 
-    <!-- ============================================ -->
-    <!--                     CTA                      -->
-    <!-- ============================================ -->
-
-    <section id="cta-697">
-        <div class="cs-container">
-            <div class="cs-content">
-                <h2 class="cs-title">Discover blissful rejuvenation and book your Thai beauty spa escape today!</h2>
-                <a href="" class="cs-button-solid">Schedule An Appointment</a>
-            </div>
-        </div>
-        <!--SVG Waves Background-->
-        <img class="cs-background" src="/assets/images/icons/waves.svg" alt="wave graphic" width="1920" height="318" loading="lazy" decoding="async" aria-hidden="true">
-    </section>
+    {% include 'components/cta.html' %}
 
 {% endblock %}
