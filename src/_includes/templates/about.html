@@ -15,7 +15,7 @@ preloadImg: '/assets/images/hero.webp'
 
   <div id="banner-843">
     <div class="cs-container">
-      <span class="cs-int-title">About Aroma Thai Massage & Spa</span>
+      <span class="cs-int-title">{{ banner.title }}</span>
     </div>
     <!--Background Image-->
     <picture class="cs-background" aria-hidden="true">
@@ -23,7 +23,7 @@ preloadImg: '/assets/images/hero.webp'
       <source media="(max-width: 600px)" srcset="/assets/images/hero-m.webp">
       <!--Tablet and above Image-->
       <source media="(min-width: 601px)" srcset="/assets/images/hero.webp">
-      <img loading="lazy" decoding="async" src="/assets/images/hero.webp" alt="Thai massage banner" width="1280" height="568">
+      <img loading="lazy" decoding="async" src="/assets/images/hero.webp" alt="{{ banner.imgAlt }}" width="1280" height="568">
     </picture>
     <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
     <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,36 +43,36 @@ preloadImg: '/assets/images/hero.webp'
           <source media="(max-width: 600px)" srcset="/assets/images/hot-stone-m.webp">
           <!--Tablet and above Image-->
           <source media="(min-width: 601px)" srcset="/assets//images/hot-stone.webp">
-          <img loading="lazy" decoding="async" src="/assets//images/hot-stone.webp" alt="therapy" width="1280" height="568">
+          <img loading="lazy" decoding="async" src="/assets//images/hot-stone.webp" alt="{{ about.imgAlt }}" width="1280" height="568">
         </picture>
         <div class="cs-box">
           <span class="cs-number">2500+</span>
           <span class="cs-desc">
-            Patients served successfully
+            {{ about.imgDesc }}
           </span>
         </div>
       </div>
       <div class="cs-content">
-        <span class="cs-topper">ABOUT OUR SPA</span>
-        <h2 class="cs-title">Boutique Thai Massage in Girona</h2>
+        <span class="cs-topper">{{ about.topper }}</span>
+        <h2 class="cs-title">{{ about.title }}</h2>
         <p class="cs-text">
-          Welcome to Aroma Thai, your sanctuary of relaxation and rejuvenation in Girona. We seamlessly blend the wisdom of ancient Thai traditions with a touch of modern luxury to create an unforgettable spa experience.
+          {{ about.textOne }}
         </p>
         <p class="cs-text">
-          Our expert masseuses and spa therapists bring a wealth of extensive expertise to balance your inner energy and revitalize your entire being. Indulge in our menu of services, featuring relaxing traditional Thai massage and wonderful beauty spa treatments tailored to your unique needs.
+          {{ about.textTwo }}
         </p>
         <p class="cs-text">
-          We offer a healing refuge for your sore muscles, tired body, and stressful mind. Time to elevate your beauty treatments and give your body the pampered experience of an incredible culture. Schedule your appointment today and immerse yourself in the ultimate Thai spa escape.
+          {{ about.textThree }}
         </p>
         <div id="quote-827">
           <span class="cs-quote-text">
-            In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+            {{ about.quote }}
           </span>
-          <span class="cs-name">Justin Time</span>
-          <span class="cs-job">CEO-Founder</span>
+          <span class="cs-name">{{ about.name }}</span>
+          <span class="cs-job">{{ about.job }}</span>
           <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
         </div>
-        <a href="" class="cs-button-solid">Contact Us</a>
+        <a href="" class="cs-button-solid">{{ about.button }}</a>
       </div>
     </div>
     <!--Floating Arrow-->
@@ -86,11 +86,10 @@ preloadImg: '/assets/images/hero.webp'
     <div class="cs-container">
       <div class="cs-content">
         <div class="cs-flex">
-          <span class="cs-topper">OUR HEALING TEAM</span>
-          <h2 class="cs-title">Get to Know Our Trained Therapists
-            <br>& Beauty Technicians</h2>
+          <span class="cs-topper">{{ team.topper }}</span>
+          <h2 class="cs-title">{{ team.title | safe }}</h2>
         </div>
-        <a href="" class="cs-button-solid">View All Members</a>
+        <a href="" class="cs-button-solid">{{ team.button }}</a>
       </div>
       <ul class="cs-card-group">
         <li class="cs-item">
@@ -99,11 +98,11 @@ preloadImg: '/assets/images/hero.webp'
             <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg">
             <!--Tablet and above Image-->
             <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg">
-            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg" alt="person" width="305" height="407">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg" alt="{{ team.personOne.imgAlt }}" width="305" height="407">
           </picture>
           <div class="cs-info">
-            <span class="cs-name">Arlene MacCoy</span>
-            <span class="cs-job">Aesthetic Expert</span>
+            <span class="cs-name">{{ team.personOne.name }}</span>
+            <span class="cs-job">{{ team.personOne.job }}</span>
           </div>
         </li>
         <li class="cs-item">
@@ -112,11 +111,11 @@ preloadImg: '/assets/images/hero.webp'
             <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg">
             <!--Tablet and above Image-->
             <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg">
-            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg" alt="person" width="305" height="407">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg" alt="{{ team.personTwo.imgAlt }}" width="305" height="407">
           </picture>
           <div class="cs-info">
-            <span class="cs-name">Arlene MacCoy</span>
-            <span class="cs-job">Aesthetic Expert</span>
+            <span class="cs-name">{{ team.personTwo.name }}</span>
+            <span class="cs-job">{{ team.personTwo.job }}</span>
           </div>
         </li>
         <li class="cs-item">
@@ -125,11 +124,11 @@ preloadImg: '/assets/images/hero.webp'
             <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson3.jpg">
             <!--Tablet and above Image-->
             <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson3.jpg">
-            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson3.jpg" alt="person" width="305" height="407">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson3.jpg" alt="{{ team.personThree.imgAlt }}" width="305" height="407">
           </picture>
           <div class="cs-info">
-            <span class="cs-name">Arlene MacCoy</span>
-            <span class="cs-job">Aesthetic Expert</span>
+            <span class="cs-name">{{ team.personThree.name }}</span>
+            <span class="cs-job">{{ team.personThree.job }}</span>
           </div>
         </li>
         <li class="cs-item">
@@ -138,30 +137,17 @@ preloadImg: '/assets/images/hero.webp'
             <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg">
             <!--Tablet and above Image-->
             <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg">
-            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg" alt="person" width="305" height="407">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson4.jpg" alt="{{ team.personFour.imgAlt }}" width="305" height="407">
           </picture>
           <div class="cs-info">
-            <span class="cs-name">Arlene MacCoy</span>
-            <span class="cs-job">Aesthetic Expert</span>
+            <span class="cs-name">{{ team.personFour.name }}</span>
+            <span class="cs-job">{{ team.personFour.job }}</span>
           </div>
         </li>
       </ul>
     </div>
   </section>
 
-  <!-- ============================================ -->
-  <!--                     CTA                      -->
-  <!-- ============================================ -->
-
-  <section id="cta-697">
-    <div class="cs-container">
-      <div class="cs-content">
-        <h2 class="cs-title">Discover blissful rejuvenation and book your Thai beauty spa escape today!</h2>
-        <a href="" class="cs-button-solid">Schedule An Appointment</a>
-      </div>
-    </div>
-    <!--SVG Waves Background-->
-    <img class="cs-background" src="/assets/images/icons/waves.svg" alt="wave graphic" width="1920" height="318" loading="lazy" decoding="async" aria-hidden="true">
-  </section>
+  {% include 'components/cta.html' %}
 
 {% endblock %}
