@@ -2,7 +2,7 @@
 layout: "templates/home.html"
 title: "Pixel Perfect Websites"
 description: "Meta description for the page"
-permalink: "/en"
+permalink: "/en/"
 eleventyNavigation:
   key: HOME
   order: 100
