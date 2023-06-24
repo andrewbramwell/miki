@@ -37,6 +37,9 @@
 		"cta": {
 			"title": "Discover blissful rejuvenation and book your Thai beauty spa escape today!",
 			"button": "Schedule An Appointment"
+		},
+		"featured": {
+			"header": "Featured Posts"
 		}
 	}
 }
