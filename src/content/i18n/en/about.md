@@ -45,4 +45,4 @@ team:
     imgAlt: 'person'
     name: 'Arlene MacCoy'
     job: 'Aesthetic Expert'
-  
+---

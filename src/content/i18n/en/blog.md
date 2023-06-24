@@ -15,3 +15,4 @@ banner:
 blog:
   noPosts: 'No Recent Posts'
   cta: 'Continue Reading'
+---
