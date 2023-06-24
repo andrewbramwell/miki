@@ -1,0 +1,87 @@
+---
+preloadImg: '/assets/images/hero.webp'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/projects.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-843">
+        <div class="cs-container">
+            <span class="cs-int-title">{{ banner.title }}</span>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background" aria-hidden="true">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/hero-m.webp">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/hero.webp">
+            <img loading="lazy" decoding="async" src="/assets/images/hero.webp" alt="{{ banner.imgAlt }}" width="1280" height="568">
+        </picture>
+        <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
+        <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white" />
+        </svg>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                  Gallery                     -->
+    <!-- ============================================ -->
+
+    <section id="gallery-42">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <h2 class="cs-title">{{ gallery.title }}</h2>
+                </div>
+                <div class="cs-flex">
+                    <p class="cs-text">{{ gallery.text }}</p>
+
+                </div>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture cs-picture-1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/gal-2-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets//images/gal-2.webp">
+                    <img loading="lazy" decoding="async" src="/assets/images/gal-2.webp" alt="{{ imgOneAlt }}" width="380" height="271">
+                </picture>
+                <picture class="cs-picture cs-picture-2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/gal-6-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/gal-6.webp">
+                    <img loading="lazy" decoding="async" src="/assets/images/gal-6.webp" alt="{{ imgTwoAlt }}" width="380" height="271">
+                </picture>
+                <picture class="cs-picture cs-picture-3">
+                    <source media="(max-width: 600px)" srcset="/assets/images/gal-8-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/gal-8.webp">
+                    <img loading="lazy" decoding="async" src="/assets/images/gal-8.webp" alt="{{ imgThreeAlt }}" width="780" height="582">
+                </picture>
+                <picture class="cs-picture cs-picture-4">
+                    <source media="(max-width: 600px)" srcset="/assets/images/gal-3-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/gal-3-m.webp">
+                    <img loading="lazy" decoding="async" src="/assets/images/gal-3.webp" alt="{{ imgFourAlt }}" width="780" height="582">
+                </picture>
+                <picture class="cs-picture cs-picture-5">
+                    <source media="(max-width: 600px)" srcset="/assets/images/gal-10-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/gal-10-m.webp">
+                    <img loading="lazy" decoding="async" src="/assets/images/gal-10-m.webp" alt="{{ imgFiveAlt }}" width="380" height="271">
+                </picture>
+                <picture class="cs-picture cs-picture-6">
+                    <source media="(max-width: 600px)" srcset="/assets/images/gal-11-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/gal-11-m.webp">
+                    <img loading="lazy" decoding="async" src="/assets/images/gal-11-m.webp" alt="{{ imgSixAlt }}" width="380" height="271">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}
