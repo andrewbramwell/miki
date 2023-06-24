@@ -152,7 +152,7 @@
             align-items: flex-start;
         }
     
-        .cs-title {
+        h1 {
             font-size: var(--headerFontSize);
             font-weight: 900;
             line-height: 1.2em;
@@ -193,7 +193,7 @@
             margin: 0;
         }
 
-        .cs-color {
+        h1, h3 {
             color: var(--primary);
         }
     
@@ -303,10 +303,10 @@
         #sbs-867 {
             background-color: var(--dark);
             
-            .cs-title, .cs-text, h2, h3, h4, h5, h6, li, p {
+            h1, .cs-text, h2, h3, h4, h5, h6, li, p {
                 color: var(--bodyTextColorWhite);
             }
-            .cs-color, a {
+            h1, h3, a {
                 color: var(--primaryLight);
             }
 
@@ -356,7 +356,7 @@
             box-sizing: border-box;
         }
     
-        .cs-title {
+        h1 {
             /* cs-title override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This second cs-text is a section specific override that stays inside this stitch */
             /* 20 characters wide including spaces */
             max-width: 20ch;
@@ -562,7 +562,7 @@
                 color: var(--primaryLight);
             }
 
-            .cs-title, .cs-item-p {
+            h1, .cs-item-p {
                 color: var(--bodyTextColorWhite);
             }
 
