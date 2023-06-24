@@ -2,56 +2,54 @@
 <!--                   Footer                     -->
 <!-- ============================================ -->
 
+{% set footer = components[page.lang].footer %}
 <footer id="footer">
     <div class="container">
         <div class="left-section">
-            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/images/icons/logo.png" alt="logo" width="264" height="78"></a>
-            <p>
-               
-            </p>
+            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/images/icons/logo.png" alt="{{ footer.logoAlt }}" width="264" height="78"></a>
         </div>
         <div class="right-section">
             <div class="lists">
                 <ul>
                     <li>
-                        <h2>Massage</h2>
+                        <h2>{{ footer.listOne.header }}</h2>
                     </li>
                     <li>
-                        <a href="/thai-massage">Thai Massage</a>
+                        <a href="/thai-massage">{{ footer.listOne.itemOne }}</a>
                     </li>
                     <li>
-                        <a href="/aromatherapy-massage">Aromatherapy</a>
+                        <a href="/aromatherapy-massage">{{ footer.listOne.itemTwo }}</a>
                     </li>
                     <li>
-                        <a href="/lomi-lomi-massage">Lomi Lomi</a>
+                        <a href="/lomi-lomi-massage">{{ footer.listOne.itemThree }}</a>
                     </li>
                     <li>
-                        <a href="/herbal-compress">Herbal Compress</a>
+                        <a href="/herbal-compress">{{ footer.listOne.itemFour }}</a>
                     </li>
                     <li>
-                        <a href="/hot-stone-massage">Hot Stone</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <h2>Massage</h2>
-                    </li>
-                    <li>
-                        <a href="/foot-reflexology">Foot Massage</a>
-                    </li>
-                    <li>
-                        <a href="/back-neck-head-massage">Back Massage </a>
-                    </li>
-                    <li>
-                        <a href="/cyclists-massage">Cyclists </a>
-                    </li>
-                    <li>
-                        <a href="/jet-lag-recovery">Jet Lag </a>
+                        <a href="/hot-stone-massage">{{ footer.listOne.itemFive }}</a>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <h2>Contact</h2>
+                        <h2>{{ footer.listTwo.header }}</h2>
+                    </li>
+                    <li>
+                        <a href="/foot-reflexology">{{ footer.listTwo.itemOne }}</a>
+                    </li>
+                    <li>
+                        <a href="/back-neck-head-massage">{{ footer.listTwo.itemTwo }}</a>
+                    </li>
+                    <li>
+                        <a href="/cyclists-massage">{{ footer.listTwo.itemThree }}</a>
+                    </li>
+                    <li>
+                        <a href="/jet-lag-recovery">{{ footer.listTwo.itemFour }}</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>{{ footer.listThree.header }}</h2>
                     </li>
                     <li>
                         <a href="/contact">
@@ -68,7 +66,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:{{client.email}}">Click to Email</a>
+                        <a href="mailto:{{client.email}}">{{ footer.listThree.emailCTA }}</a>
                     </li>
                 </ul>
             </div>
@@ -76,9 +74,8 @@
     </div>
 
     <div class="credit">
-        <span>Designed and Hand Coded by</span>
-        <a href="/" target="_blank" rel="noopener">Aroma Thai</a>
-        <span class="copyright">
-            Copyright 2023 - Present</span>
+        <span>{{ footer.credit.title }}</span>
+        <a href="/" target="_blank" rel="noopener">{{ footer.credit.company }}</a>
+        <span class="copyright">{{ footer.credit.copyright }}</span>
     </div>
 </footer>

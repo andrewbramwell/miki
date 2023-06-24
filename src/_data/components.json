@@ -6,6 +6,33 @@
 			"dropdownAria": "dropdown icon",
 			"darkModeAria": "dark mode toggle",
 			"contact": "Contact Us"
+		},
+		"footer": {
+			"logoAlt": "logo",
+			"listOne": {
+				"header": "Massage",
+				"itemOne": "Thai Massage",
+				"itemTwo": "Aromatherapy",
+				"itemThree": "Lomi Lomi",
+				"itemFour": "Herbal Compress",
+				"itemFive": "Hot Stone"
+			},
+			"listTwo": {
+				"header": "Massage",
+				"itemOne": "Foot Massage",
+				"itemTwo": "Back Massage",
+				"itemThree": "Cyclists",
+				"itemFour": "Jet Lag"
+			},
+			"listThree": {
+				"header": "Contact",
+				"emailCTA": "Click to Email"
+			},
+			"credit": {
+				"title": "Designed and Hand Coded by",
+				"company": "Aroma Thai",
+				"copyright": "Copyright 2023 - Present"
+			}
 		}
 	}
 }
