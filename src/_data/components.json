@@ -33,6 +33,10 @@
 				"company": "Aroma Thai",
 				"copyright": "Copyright 2023 - Present"
 			}
+		},
+		"cta": {
+			"title": "Discover blissful rejuvenation and book your Thai beauty spa escape today!",
+			"button": "Schedule An Appointment"
 		}
 	}
 }
