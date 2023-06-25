@@ -1,0 +1,136 @@
+---
+preloadImg: '/assets/images/hero.webp'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/massage.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-843">
+        <div class="cs-container">
+            <span class="cs-int-title">{{ banner.title }}</span>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background" aria-hidden="true">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/hero-m.webp">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/hero.webp">
+            <img loading="lazy" decoding="async" src="/assets/images/hero.webp" alt="{{ banner.imgAlt }}" width="1280" height="568">
+        </picture>
+        <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
+        <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white" />
+        </svg>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                   Services                   -->
+    <!-- ============================================ -->
+
+    <section id="services-877">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">{{ services.topper }}</span>
+                <h2 class="cs-title">{{ services.title }}</h2>
+                <p class="cs-text">
+                    {{ services.text }}
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture" aria-hidden="true">
+                            <source media="(max-width: 600px)" srcset="">
+                            <source media="(min-width: 601px)" srcset="">
+                            <img loading="lazy" decoding="async" src="" alt="{{ services.serviceOne.title }}" width="305" height="200">
+                        </picture>
+                        <h3 class="cs-h3">
+                            <span class="cs-color">{{ services.serviceOne.title }}</span></h3>
+                        <p class="cs-item-text">
+                            <strong>{{ services.serviceOne.price }}</strong>
+                        </p>
+                        <br>
+                        <p class="cs-item-text">{{ services.serviceOne.text }}</p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture" aria-hidden="true">
+                            <source media="(max-width: 600px)" srcset="">
+                            <source media="(min-width: 601px)" srcset="">
+                            <img loading="lazy" decoding="async" src="" alt="{{ services.serviceTwo.title }}" width="305" height="200">
+                        </picture>
+                        <h3 class="cs-h3">
+                            <span class="cs-color">{{ services.serviceTwo.title }}</span></h3>
+                        <p class="cs-item-text">
+                            <strong>{{ services.serviceTwo.price }}</strong>
+                        </p>
+                        <br>
+                        <p class="cs-item-text">{{ services.serviceTwo.text }}</p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture" aria-hidden="true">
+                            <source media="(max-width: 600px)" srcset="">
+                            <source media="(min-width: 601px)" srcset="">
+                            <img loading="lazy" decoding="async" src="" alt="{{ services.serviceThree.title }}" width="305" height="200">
+                        </picture>
+                        <h3 class="cs-h3">
+                            <span class="cs-color">{{ services.serviceThree.title }}</span></h3>
+                        <p class="cs-item-text">
+                            <strong>{{ services.serviceThree.price }}</strong>
+                        </p>
+                        <br>
+                        <p class="cs-item-text">{{ services.serviceThree.text }}</p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture" aria-hidden="true">
+                            <source media="(max-width: 600px)" srcset="">
+                            <source media="(min-width: 601px)" srcset="">
+                            <img loading="lazy" decoding="async" src="" alt="{{ services.serviceFour.title }}" width="305" height="200">
+                        </picture>
+                        <h3 class="cs-h3">
+                            <span class="cs-color">{{ services.serviceFour.title }}</span></h3>
+                        <p class="cs-item-text">
+                            <strong>{{ services.serviceFour.price }}</strong>
+                        </p>
+                        <br>
+                        <p class="cs-item-text">{{ services.serviceFour.text }}</p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture" aria-hidden="true">
+                            <source media="(max-width: 600px)" srcset="">
+                            <source media="(min-width: 601px)" srcset="">
+                            <img loading="lazy" decoding="async" src="" alt="{{ services.serviceFive.title }}" width="305" height="200">
+                        </picture>
+                        <h3 class="cs-h3">
+                            <span class="cs-color">{{ services.serviceFive.title }}</span></h3>
+                        <p class="cs-item-text">
+                            <strong>{{ services.serviceFive.price }}</strong>
+                        </p>
+                        <br>
+                        <p class="cs-item-text">{{ services.serviceFive.text }}</p>
+                    </a>
+                </li>
+            </ul>
+            <a href="" class="cs-button-solid">{{ services.button }}</a>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}
