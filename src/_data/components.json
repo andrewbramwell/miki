@@ -84,5 +84,48 @@
 		"featured": {
 			"header": "(ES) Featured Posts"
 		}
+	},
+	"de": {
+		"header": {
+			"logoAria": "(DE) back to home",
+			"toggleAria": "(DE) mobile menu toggle",
+			"dropdownAria": "(DE) dropdown icon",
+			"darkModeAria": "(DE) dark mode toggle",
+			"contact": "(DE) Contact Us"
+		},
+		"footer": {
+			"logoAlt": "(DE) logo",
+			"listOne": {
+				"header": "(DE) Massage",
+				"itemOne": "(DE) Thai Massage",
+				"itemTwo": "(DE) Aromatherapy",
+				"itemThree": "(DE) Lomi Lomi",
+				"itemFour": "(DE) Herbal Compress",
+				"itemFive": "(DE) Hot Stone"
+			},
+			"listTwo": {
+				"header": "(DE) Massage",
+				"itemOne": "(DE) Foot Massage",
+				"itemTwo": "(DE) Back Massage",
+				"itemThree": "(DE) Cyclists",
+				"itemFour": "(DE) Jet Lag"
+			},
+			"listThree": {
+				"header": "(DE) Contact",
+				"emailCTA": "(DE) Click to Email"
+			},
+			"credit": {
+				"title": "(DE) Designed and Hand Coded by",
+				"company": "(DE) Aroma Thai",
+				"copyright": "(DE) Copyright 2023 - Present"
+			}
+		},
+		"cta": {
+			"title": "(DE) Discover blissful rejuvenation and book your Thai beauty spa escape today!",
+			"button": "(DE) Schedule An Appointment"
+		},
+		"featured": {
+			"header": "(DE) Featured Posts"
+		}
 	}
 }
