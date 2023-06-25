@@ -1,21 +1,21 @@
 ---
 layout: "templates/service.html"
-title: "Jet lag Recovery Package"
+title: "(ES) Jet lag Recovery Package"
 description:
   "Counteract the effects of long-haul travel with this re-energising facial and body treatment at Aroma Thai massage &
   Spa in Girona, Spain."
-preloadImg: "/assets/images/hero.webp"
-permalink: "/en/jet-lag-recovery/"
+preloadImg: "(ES) /assets/images/hero.webp"
+permalink: "/es/jet-lag-recovery/"
 
 banner:
-  title: "Jet lag Recovery Package"
-  imgAlt: "Thai massage banner"
+  title: "(ES) Jet lag Recovery Package"
+  imgAlt: "(ES) Thai massage banner"
 
-imgAlt: "therapy"
+imgAlt: "(ES) therapy"
 
 faqs:
-  topper: "FAQ's"
-  title: "Thai Massage Frequently Asked Questions"
+  topper: "(ES) FAQ's"
+  title: "(ES) Thai Massage Frequently Asked Questions"
   qOne:
     button: What is a jet lag recovery package?
     text:
