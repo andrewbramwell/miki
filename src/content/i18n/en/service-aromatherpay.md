@@ -1,14 +1,14 @@
 ---
 layout: "templates/service.html"
-title: "Traditional Thai Massage"
+title: "Aromatherapy Massage"
 description:
-  "Indulge in healing Traditional Thai massage at Aroma Thai Massage & Spa in Girona. Our skilled therapists restore
-  balance, release tension, and promote relaxation."
+  "Rejuvenate with Aromatherapy Massage at Aroma Thai Massage & Spa, Girona. Skilled therapists restore balance and
+  promote relaxation using soothing essential oils."
 preloadImg: "/assets/images/hero.webp"
-permalink: "/en/thai-massage/"
+permalink: "/en/aromatherapy-massage/"
 
 banner:
-  title: "Thai Massage"
+  title: "Aromatherapy Massage"
   imgAlt: "Thai massage banner"
 
 imgAlt: "therapy"
@@ -17,42 +17,35 @@ faqs:
   topper: "FAQ's"
   title: "Thai Massage Frequently Asked Questions"
   qOne:
-    button: "Does Traditional Thai Massage involve oil?"
+    button: "Is aromatherapy massage safe for everyone?"
     text:
-      "At Aroma Thai Massage & Spa, we have customized our Traditional Thai Massage to incorporate both dry and oil
-      massage techniques. This modified approach has become the preferred choice for the majority of our customers.
-      However, if you would specifically prefer a dry massage, kindly inform your therapist before the session begins."
+      "Aromatherapy massage is generally safe, but it's important to inform your therapist about any allergies,
+      sensitivities, or medical conditions you may have. Some essential oils may not be suitable for certain
+      individuals."
   qTwo:
-    button: "What should I wear during a Thai Massage session?"
+    button: "How are essential oils chosen for aromatherapy massage?"
     text:
-      "For your Thai Massage session, we offer Traditional Thai pants to ensure your comfort and allow ease of movement.
-      To prioritize your comfort and modesty, your upper body will be covered with a sheet while the therapist works on
-      your lower half."
+      "At Aroma Thai Massage & Spa, we offer a range of 8 delightful scents for you to choose from. Our experienced
+      therapists can assist you in selecting the most suitable essential oils based on your specific needs and
+      preferences. Alternatively, we provide tester bottles, allowing you to personally choose the essential oils that
+      resonate with you the most."
   qThree:
-    button: "Will Thai Massage be painful?"
+    button: "How long does an aromatherapy massage session typically last?"
     text:
-      "Thai Massage involves deep pressure and stretching techniques that may occasionally induce mild discomfort,
-      especially if you have areas of muscle tension. However, communication with your therapist is crucial. Inform them
-      about your comfort level, and they can adjust the pressure accordingly to ensure a pleasant and effective
-      experience."
+      "At Aroma Thai Massage & Spa, our aromatherapy massage treatments are available in either 60 or 90-minute
+      sessions, allowing you to choose the duration that best fits your schedule and needs."
   qFour:
-    button: "Can anyone receive Thai Massage, or are there any contraindications?"
+    button: "Are there any side effects of aromatherapy massage?"
     text:
-      "While Thai Massage is generally safe for most individuals, there are certain contraindications to consider. It
-      may not be suitable for people with certain medical conditions such as fractures, severe osteoporosis,
-      cardiovascular issues, or recent surgeries. It's important to consult with your healthcare provider or our
-      therapists to determine if Thai Massage is appropriate for your specific situation."
+      "Aromatherapy massage is generally safe; however, some individuals may experience mild side effects such as skin
+      irritation or allergic reactions to specific oils. Inform your therapist about any known allergies or
+      sensitivities to minimize risks."
   qFive:
-    button: "How long does a Thai Massage session typically last?"
+    button: "Can I receive an aromatherapy massage if I don't like strong scents?"
     text:
-      "At Aroma Thai Massage & Spa, our thai massage treatments are available in either 60 or 90-minute sessions,
-      allowing you to choose the duration that best fits your schedule and needs."
-  qSix:
-    button: "Is Thai Massage only for relaxation, or does it provide therapeutic benefits?"
-    text:
-      "Thai Massage offers both relaxation and therapeutic benefits. While it is known for its ability to promote deep
-      relaxation and stress relief, it also targets specific areas of muscle tension and aims to improve flexibility,
-      circulation, and overall well-being."
+      "Absolutely! We understand individual preferences vary. Our therapists can customize the aroma intensity by
+      adjusting the concentration of essential oils to suit your preference. If you're sensitive to strong scents, we
+      can use milder oils or lower the concentration to ensure your comfort."
 ---
 
 # Traditional Thai Massage in Girona Spain

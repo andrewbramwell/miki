@@ -1,10 +1,3 @@
----
-title: 'Traditional Thai Massage'
-description: 'Indulge in healing Traditional Thai massage at Aroma Thai Massage & Spa in Girona. Our skilled therapists restore balance, release tension, and promote relaxation.'
-preloadImg: '/assets/images/hero.webp'
-permalink: 'thai-massage/'
----
-
 {% extends "layouts/base.html" %}
 
 {% block head %}
@@ -75,66 +68,84 @@ permalink: 'thai-massage/'
                 <h2 class="cs-title">Thai Massage Frequently Asked Questions</h2>
                 <ul class="cs-faq-group">
                     <!-- Active class added as default -->
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                {{ faq.qOne.button }}
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            {{ faq.qOne.text }}
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                {{ faq.qTwo.button }}
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            {{ faq.qTwo.text }}
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                {{ faq.qThree.button }}
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            {{ faq.qThree.text }}
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                {{ faq.qFour.button }}
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            {{ faq.qFour.text }}
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                {{ faq.qFive.button }}
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            {{ faq.qFive.text }}
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                {{ faq.qSix.button }}
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            {{ faq.qSix.text }}
-                        </p>
-                    </li>
+                    {% if faqs.qOne %}
+                        <li class="cs-faq-item active">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    {{ faqs.qOne.button }}
+                                </span>
+                            </button>
+                            <p class="cs-item-p">
+                                {{ faqs.qOne.text }}
+                            </p>
+                        </li>
+                    {% endif %}
+
+                    {% if faqs.qTwo %}
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    {{ faqs.qTwo.button }}
+                                </span>
+                            </button>
+                            <p class="cs-item-p">
+                                {{ faqs.qTwo.text }}
+                            </p>
+                        </li>
+                    {% endif %}
+
+                    {% if faqs.qThree %}
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    {{ faqs.qThree.button }}
+                                </span>
+                            </button>
+                            <p class="cs-item-p">
+                                {{ faqs.qThree.text }}
+                            </p>
+                        </li>
+                    {% endif %}
+
+                    {% if faqs.qFour %}
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    {{ faqs.qFour.button }}
+                                </span>
+                            </button>
+                            <p class="cs-item-p">
+                                {{ faqs.qFour.text }}
+                            </p>
+                        </li>
+                    {% endif %}
+
+                    {% if faqs.qFive %}
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    {{ faqs.qFive.button }}
+                                </span>
+                            </button>
+                            <p class="cs-item-p">
+                                {{ faqs.qFive.text }}
+                            </p>
+                        </li>
+                    {% endif %}
+
+                    {% if faqs.qSix %}
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    {{ faqs.qSix.button }}
+                                </span>
+                            </button>
+                            <p class="cs-item-p">
+                                {{ faqs.qSix.text }}
+                            </p>
+                        </li>
+                    {% endif %}
+
                 </ul>
             </div>
         </div>
