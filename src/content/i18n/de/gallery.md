@@ -4,7 +4,7 @@ title: "(DE) Gallery"
 description: "(DE) Meta description for the page"
 permalink: "/de/gallery/"
 eleventyNavigation:
-  key: (DE) GALLERY
+  key: GALLERY
   order: 500
   locale: de
 

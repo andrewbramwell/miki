@@ -71,7 +71,7 @@ preloadImg: '/assets/images/landing.jpg'
       </div>
       <ul class="cs-card-group">
         <li class="cs-item">
-          <a href="thai-massage/" class="cs-link">
+          <a href="{{ 'thai-massage/'  | locale_url }}" class="cs-link">
             <picture class="cs-picture" aria-hidden="true">
               <source media="(max-width: 600px)" srcset="assets/images/thai-massage-m.webp">
               <source media="(min-width: 601px)" srcset="assets/images/thai-massage.webp">
@@ -91,7 +91,7 @@ preloadImg: '/assets/images/landing.jpg'
           </a>
         </li>
         <li class="cs-item">
-          <a href="aromatherapy-massage/" class="cs-link">
+          <a href="{{ 'aromatherapy-massage/'  | locale_url }}" class="cs-link">
             <picture class="cs-picture" aria-hidden="true">
               <source media="(max-width: 600px)" srcset="assets/images/aromatherapy-massage-m.webp">
               <source media="(min-width: 601px)" srcset="assets/images/aromatherapy-massage.webp">
@@ -111,7 +111,7 @@ preloadImg: '/assets/images/landing.jpg'
           </a>
         </li>
         <li class="cs-item">
-          <a href="herbal-compress/" class="cs-link">
+          <a href="{{ 'herbal-compress/' | locale_url }}" class="cs-link">
             <picture class="cs-picture" aria-hidden="true">
               <source media="(max-width: 600px)" srcset="assets/images/herbal-compress-massage-m.webp">
               <source media="(min-width: 601px)" srcset="assets/images/herbal-compress-massage.webp">
@@ -181,7 +181,7 @@ preloadImg: '/assets/images/landing.jpg'
             </div>
           </a>
         </div>
-        <a href="/about" class="cs-button-solid">{{ about.button }}</a>
+        <a href="{{ '/about' | locale_url }}" class="cs-button-solid">{{ about.button }}</a>
       </div>
     </div>
   </section>

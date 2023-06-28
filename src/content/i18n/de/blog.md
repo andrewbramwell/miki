@@ -4,7 +4,7 @@ title: "(DE) Blog"
 description: "(DE) Meta description for the page"
 permalink: "/de/blog/"
 eleventyNavigation:
-  key: (DE) BLOG
+  key: BLOG
   order: 600
   locale: de
 

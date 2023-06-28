@@ -4,7 +4,7 @@ title: "(DE) About"
 description: "(DE) Meta description for the page"
 permalink: "/de/about/"
 eleventyNavigation:
-  key: (DE) ABOUT US
+  key: ABOUT US
   order: 200
   locale: de
 

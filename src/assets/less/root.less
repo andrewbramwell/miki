@@ -458,6 +458,41 @@
 		.cs-button-solid {
 			display: none;
 		}
+
+		.locale {
+			position: absolute;
+			right: (122/16em);
+			top: (15/16rem);
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			background: white;
+			padding: 0.5rem;
+		}
+
+		.locale__link {
+			display: flex;
+			align-items: center;
+			gap: 0.25rem;
+			text-decoration: none;
+
+			img {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+
+			span {
+				color: var(--headerColor);
+			}
+		}
+
+		.locale__link--hidden {
+			display: none;
+		}
+
+		.open {
+			display: flex;
+		}
 	}
 }
 
@@ -482,6 +517,14 @@
 
 			.cs-li-link {
 				color: var(--bodyTextColorWhite);
+			}
+
+			.locale {
+				background: var(--dark);
+
+				span {
+					color: white;
+				}
 			}
 		}
 	}
@@ -817,7 +860,42 @@
 				transition: width 0.3s;
 			}
 		}
+		.locale {
+			position: relative;
+			display: grid;
+			background: white;
+			height: (38/16rem);
 
+			a {
+				padding: 0.5rem;
+			}
+		}
+
+		.locale__link {
+			display: flex;
+			align-items: center;
+			gap: 0.25rem;
+			text-decoration: none;
+
+			img {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+
+			span {
+				color: var(--headerColor);
+			}
+		}
+
+		.locale__link--hidden {
+			display: none;
+		}
+
+		.open {
+			display: flex;
+			padding: 1rem;
+			background: white;
+		}
 	}
 }
 
@@ -840,6 +918,18 @@
 				&:before {
 					background-color: var(--primaryLight);
 				}
+			}
+
+			.locale {
+				background: var(--dark);
+
+				span {
+					color: white;
+				}
+			}
+
+			.open {
+				background: var(--dark)
 			}
 		}
 	}

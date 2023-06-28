@@ -4,7 +4,7 @@ title: "(ES) Beauty Spa"
 description: "(ES) Meta description for the page"
 permalink: "/es/spa/"
 eleventyNavigation:
-  key: (ES) BEAUTY SPA
+  key: BEAUTY SPA
   order: 400
   locale: es
 

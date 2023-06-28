@@ -48,7 +48,7 @@
 			"toggleAria": "(ES) mobile menu toggle",
 			"dropdownAria": "(ES) dropdown icon",
 			"darkModeAria": "(ES) dark mode toggle",
-			"contact": "(ES) Contact Us"
+			"contact": "Contact Us"
 		},
 		"footer": {
 			"logoAlt": "(ES) logo",
@@ -91,7 +91,7 @@
 			"toggleAria": "(DE) mobile menu toggle",
 			"dropdownAria": "(DE) dropdown icon",
 			"darkModeAria": "(DE) dark mode toggle",
-			"contact": "(DE) Contact Us"
+			"contact": "Contact Us"
 		},
 		"footer": {
 			"logoAlt": "(DE) logo",

@@ -4,7 +4,7 @@ title: "(ES) Pixel Perfect Websites"
 description: "(ES) Meta description for the page"
 permalink: "/es/"
 eleventyNavigation:
-  key: (ES) HOME
+  key: HOME
   order: 100
   locale: es
 
