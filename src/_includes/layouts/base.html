@@ -1,7 +1,7 @@
 <!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
 
 <!DOCTYPE html>
-<html lang="{{ page.lang }}">
+<html lang="{{ page.lang }}" dir="{{ languages[page.lang].dir or 'ltr' }}">
   <head>
     <!-- Standard meta tags -->
     <meta charset="UTF-8">
