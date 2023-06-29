@@ -19,3 +19,36 @@
 [build.processing.html]
   pretty_urls = false
 
+[[redirects]]
+  from = "/"
+  to = "/ca"
+  status = 302
+  force = true
+  conditions = {Language = ["ca"]}
+
+[[redirects]]
+from = "/"
+to = "/es"
+status = 302
+force = true
+conditions = {Language = ["es"]}
+
+[[redirects]]
+  from = "/"
+  to = "/de"
+  status = 302
+  force= true
+  conditions = {Language = ["de"]}
+
+[[redirects]]
+  from = "/"
+  to = "/fr"
+  status = 302
+  force = true
+  conditions = {Language = ["fr"]}
+
+[[redirects]]
+  from = "/"
+  to = "/en"
+  status = 302
+  force = true
