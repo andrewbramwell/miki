@@ -127,5 +127,91 @@
 		"featured": {
 			"header": "(DE) Featured Posts"
 		}
+	},
+	"ca": {
+		"header": {
+			"logoAria": "(CA) back to home",
+			"toggleAria": "(CA) mobile menu toggle",
+			"dropdownAria": "(CA) dropdown icon",
+			"darkModeAria": "(CA) dark mode toggle",
+			"contact": "Contact Us"
+		},
+		"footer": {
+			"logoAlt": "(CA) logo",
+			"listOne": {
+				"header": "(CA) Massage",
+				"itemOne": "(CA) Thai Massage",
+				"itemTwo": "(CA) Aromatherapy",
+				"itemThree": "(CA) Lomi Lomi",
+				"itemFour": "(CA) Herbal Compress",
+				"itemFive": "(CA) Hot Stone"
+			},
+			"listTwo": {
+				"header": "(CA) Massage",
+				"itemOne": "(CA) Foot Massage",
+				"itemTwo": "(CA) Back Massage",
+				"itemThree": "(CA) Cyclists",
+				"itemFour": "(CA) Jet Lag"
+			},
+			"listThree": {
+				"header": "(CA) Contact",
+				"emailCTA": "(CA) Click to Email"
+			},
+			"credit": {
+				"title": "(CA) Designed and Hand Coded by",
+				"company": "(CA) Aroma Thai",
+				"copyright": "(CA) Copyright 2023 - Present"
+			}
+		},
+		"cta": {
+			"title": "(CA) Discover blissful rejuvenation and book your Thai beauty spa escape today!",
+			"button": "(CA) Schedule An Appointment"
+		},
+		"featured": {
+			"header": "(CA) Featured Posts"
+		}
+	},
+	"fr": {
+		"header": {
+			"logoAria": "(FR) back to home",
+			"toggleAria": "(FR) mobile menu toggle",
+			"dropdownAria": "(FR) dropdown icon",
+			"darkModeAria": "(FR) dark mode toggle",
+			"contact": "Contact Us"
+		},
+		"footer": {
+			"logoAlt": "(FR) logo",
+			"listOne": {
+				"header": "(FR) Massage",
+				"itemOne": "(FR) Thai Massage",
+				"itemTwo": "(FR) Aromatherapy",
+				"itemThree": "(FR) Lomi Lomi",
+				"itemFour": "(FR) Herbal Compress",
+				"itemFive": "(FR) Hot Stone"
+			},
+			"listTwo": {
+				"header": "(FR) Massage",
+				"itemOne": "(FR) Foot Massage",
+				"itemTwo": "(FR) Back Massage",
+				"itemThree": "(FR) Cyclists",
+				"itemFour": "(FR) Jet Lag"
+			},
+			"listThree": {
+				"header": "(FR) Contact",
+				"emailCTA": "(FR) Click to Email"
+			},
+			"credit": {
+				"title": "(FR) Designed and Hand Coded by",
+				"company": "(FR) Aroma Thai",
+				"copyright": "(FR) Copyright 2023 - Present"
+			}
+		},
+		"cta": {
+			"title": "(FR) Discover blissful rejuvenation and book your Thai beauty spa escape today!",
+			"button": "(FR) Schedule An Appointment"
+		},
+		"featured": {
+			"header": "(FR) Featured Posts"
+		}
 	}
 }
